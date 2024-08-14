@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "photon",
+  "version": "1.0.7.a",
+  "name": "Photon",
+  "description": "Photon, particle system",
+  "authors": [
+    "KilaBash"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Low-Drag-MC/Photon/",
+    "sources": "https://github.com/Low-Drag-MC/Photon/"
+  },
+  "license": "GPL-3.0 license",
+  "icon": "assets/photon/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.lowdragmc.photon.fabric.PhotonImpl"
+    ],
+    "client": [
+      "com.lowdragmc.photon.client.fabric.ClientProxyImpl"
+    ],
+    "ldlib_pugin": [
+      "com.lowdragmc.photon.integration.PhotonLDLibPlugin"
+    ]
+  },
+  "mixins": [
+    "photon.mixins.json",
+    "photon-common.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "1.20.1",
+    "fabricloader": "\u003e\u003d0.14.21",
+    "fabric-api": "\u003e\u003d0.83.0+1.20.1"
+  },
+  "accessWidener": "photon.accesswidener",
+  "jars": [
+    {
+      "file": "META-INF/jars/ldlib-fabric-1.20.1-1.0.21.a.jar"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "mappings": {
+    "com/lowdragmc/photon/core/mixins/accessor/BlendModeAccessor": {
+      "lastApplied": "field_1484:Lnet/minecraft/class_277;"
+    },
+    "com/lowdragmc/photon/core/mixins/accessor/MinecraftAccessor": {
+      "fps": "field_1738:I"
+    },
+    "com/lowdragmc/photon/core/mixins/accessor/ParticleEngineAccessor": {
+      "particles": "field_3830:Ljava/util/Map;"
+    },
+    "com/lowdragmc/photon/core/mixins/accessor/ShaderInstanceAccessor": {
+      "blend": "field_29464:Lnet/minecraft/class_277;",
+      "samplerNames": "field_29488:Ljava/util/List;",
+      "uniformMap": "field_29492:Ljava/util/Map;"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "com/lowdragmc/photon/core/mixins/accessor/BlendModeAccessor": {
+        "lastApplied": "field_1484:Lnet/minecraft/class_277;"
+      },
+      "com/lowdragmc/photon/core/mixins/accessor/MinecraftAccessor": {
+        "fps": "field_1738:I"
+      },
+      "com/lowdragmc/photon/core/mixins/accessor/ParticleEngineAccessor": {
+        "particles": "field_3830:Ljava/util/Map;"
+      },
+      "com/lowdragmc/photon/core/mixins/accessor/ShaderInstanceAccessor": {
+        "blend": "field_29464:Lnet/minecraft/class_277;",
+        "samplerNames": "field_29488:Ljava/util/List;",
+        "uniformMap": "field_29492:Ljava/util/Map;"
+      }
+    }
+  }
+}

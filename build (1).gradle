@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id 'fabric-loom' version '1.7.3'
+    // Remove or update any conflicting plugin versions if needed
+}
+
+repositories {
+    maven {
+        url = uri("https://maven.fabricmc.net/")
+    }
+    mavenCentral()
+}
+
+dependencies {
+    // Add dependencies specific to the 'common' subproject
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+        mavenGroovy(MavenPublication) {
+            from components.groovy
+        }
+    }
+}
+
+    repositories {
+        // Configure repositories for publishing, e.g., Maven Central or JitPack
+        maven {
+            url = uri("https://your.repository.url/") // Replace with your repository URL
+            credentials {
+                username = project.findProperty("repoUser") ?: ""
+                password = project.findProperty("repoPassword") ?: ""
+            }
+        }
+    }
+}
